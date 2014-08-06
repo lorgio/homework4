@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1100941119915115008584F7 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100941019915115008584F7 /* SwitchViewController.swift */; };
+		1100941319915C7F008584F7 /* SilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1100941219915C7F008584F7 /* SilderViewController.swift */; };
+		110094151991625C008584F7 /* SegmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110094141991625C008584F7 /* SegmentViewController.swift */; };
 		11BAB6C019905A7E009924BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAB6BF19905A7E009924BB /* AppDelegate.swift */; };
 		11BAB6C219905A7E009924BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAB6C119905A7E009924BB /* ViewController.swift */; };
 		11BAB6C519905A7E009924BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BAB6C319905A7E009924BB /* Main.storyboard */; };
 		11BAB6C719905A7E009924BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BAB6C619905A7E009924BB /* Images.xcassets */; };
 		11BAB6D319905A7E009924BB /* Homework4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAB6D219905A7E009924BB /* Homework4Tests.swift */; };
+		11BAB6DD19905BD4009924BB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BAB6DC19905BD3009924BB /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1100941019915115008584F7 /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		1100941219915C7F008584F7 /* SilderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilderViewController.swift; sourceTree = "<group>"; };
+		110094141991625C008584F7 /* SegmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentViewController.swift; sourceTree = "<group>"; };
 		11BAB6BA19905A7E009924BB /* Homework4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BAB6BE19905A7E009924BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BAB6BF19905A7E009924BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +41,7 @@
 		11BAB6CC19905A7E009924BB /* Homework4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BAB6D119905A7E009924BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BAB6D219905A7E009924BB /* Homework4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework4Tests.swift; sourceTree = "<group>"; };
+		11BAB6DC19905BD3009924BB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,10 @@
 				11BAB6BF19905A7E009924BB /* AppDelegate.swift */,
 				11BAB6C119905A7E009924BB /* ViewController.swift */,
 				11BAB6C319905A7E009924BB /* Main.storyboard */,
+				110094141991625C008584F7 /* SegmentViewController.swift */,
+				1100941219915C7F008584F7 /* SilderViewController.swift */,
+				1100941019915115008584F7 /* SwitchViewController.swift */,
+				11BAB6DC19905BD3009924BB /* TableViewController.swift */,
 				11BAB6C619905A7E009924BB /* Images.xcassets */,
 				11BAB6BD19905A7E009924BB /* Supporting Files */,
 			);
@@ -209,6 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11BAB6C219905A7E009924BB /* ViewController.swift in Sources */,
+				1100941319915C7F008584F7 /* SilderViewController.swift in Sources */,
+				11BAB6DD19905BD4009924BB /* TableViewController.swift in Sources */,
+				1100941119915115008584F7 /* SwitchViewController.swift in Sources */,
+				110094151991625C008584F7 /* SegmentViewController.swift in Sources */,
 				11BAB6C019905A7E009924BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +411,7 @@
 				11BAB6D819905A7E009924BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11BAB6D919905A7E009924BB /* Build configuration list for PBXNativeTarget "Homework4Tests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +420,7 @@
 				11BAB6DB19905A7E009924BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

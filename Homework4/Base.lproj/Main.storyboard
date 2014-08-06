@@ -1,25 +1,236 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pSk-TF-2Ci">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wz5-px-zXb">
+                                <rect key="frame" x="261" y="324" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XA6-5A-JKB"/>
+                                </constraints>
+                                <state key="normal" title="Slider">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tBh-C9-bFp" kind="show" id="xos-0r-XFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyC-p3-rqs">
+                                <rect key="frame" x="261" y="453" width="79" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="d6e-uA-g3q"/>
+                                </constraints>
+                                <state key="normal" title="Segmented">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Ml-7K-7T4" kind="show" id="7ZC-35-GSY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-Wl-x7S">
+                                <rect key="frame" x="261" y="134" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="iE8-hA-dym"/>
+                                </constraints>
+                                <state key="normal" title="Switch">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zXB-u4-zT3" kind="show" id="ATf-JG-4Db"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="Wz5-px-zXb" secondAttribute="centerY" constant="-39" id="IQf-Fl-2OH"/>
+                            <constraint firstAttribute="centerX" secondItem="Wz5-px-zXb" secondAttribute="centerX" id="Ne8-Ip-dUH"/>
+                            <constraint firstAttribute="centerX" secondItem="IyC-p3-rqs" secondAttribute="centerX" constant="-0.5" id="Pcz-Pl-Hmk"/>
+                            <constraint firstAttribute="centerY" secondItem="IyC-p3-rqs" secondAttribute="centerY" constant="-168" id="acU-is-jos"/>
+                            <constraint firstAttribute="centerX" secondItem="bVM-Wl-x7S" secondAttribute="centerX" constant="3.5" id="cUM-e9-ngC"/>
+                            <constraint firstItem="Wz5-px-zXb" firstAttribute="centerX" secondItem="bVM-Wl-x7S" secondAttribute="centerX" id="eaq-a2-zHI"/>
+                            <constraint firstAttribute="centerY" secondItem="bVM-Wl-x7S" secondAttribute="centerY" constant="151" id="jBG-yq-TXu"/>
+                            <constraint firstItem="Wz5-px-zXb" firstAttribute="leading" secondItem="IyC-p3-rqs" secondAttribute="leading" id="pCp-cV-2t6"/>
+                            <constraint firstItem="Wz5-px-zXb" firstAttribute="leading" secondItem="bVM-Wl-x7S" secondAttribute="leading" id="pTA-AI-kCK"/>
+                            <constraint firstItem="Wz5-px-zXb" firstAttribute="centerX" secondItem="IyC-p3-rqs" secondAttribute="centerX" id="psr-5Z-m08"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="z6P-iL-9aJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1252" y="363"/>
+        </scene>
+        <!--Slider-->
+        <scene sceneID="5zm-cf-eEN">
+            <objects>
+                <viewController title="Slider" id="tBh-C9-bFp" customClass="SilderViewController" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2lg-bN-lB5"/>
+                        <viewControllerLayoutGuide type="bottom" id="rnz-2a-9Jm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="boy-tb-Je9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2XH-Ze-7vV">
+                                <rect key="frame" x="232" y="324" width="156" height="31"/>
+                                <connections>
+                                    <action selector="OnSliderChange:" destination="tBh-C9-bFp" eventType="valueChanged" id="m2s-g5-NiT"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-2i-VAR">
+                                <rect key="frame" x="177" y="328" width="33" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="Min"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVb-2F-OnR">
+                                <rect key="frame" x="432" y="328" width="33" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-5o-HHY">
+                                <rect key="frame" x="279" y="263" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1hs-5o-HHY" secondAttribute="centerX" id="2lL-dY-ScP"/>
+                            <constraint firstAttribute="centerX" secondItem="2XH-Ze-7vV" secondAttribute="centerX" constant="-10" id="6aC-U1-iLk"/>
+                            <constraint firstAttribute="centerY" secondItem="1hs-5o-HHY" secondAttribute="centerY" constant="26.5" id="6yn-7M-NRk"/>
+                            <constraint firstAttribute="centerY" secondItem="2XH-Ze-7vV" secondAttribute="centerY" constant="-39" id="Xqx-Gq-SR3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SliderLabelState" destination="1hs-5o-HHY" id="Tu0-XS-cCo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9z0-dd-ggy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="1093"/>
+        </scene>
+        <!--Segmented-->
+        <scene sceneID="97b-bP-MhT">
+            <objects>
+                <viewController title="Segmented" id="7Ml-7K-7T4" customClass="SegmentViewController" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lk1-Uf-vmd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ofj-kL-s3s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YGM-iV-hnO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4CH-jT-CiM">
+                                <rect key="frame" x="244" y="410" width="123" height="29"/>
+                                <segments>
+                                    <segment title="Doh"/>
+                                    <segment title="Ray"/>
+                                    <segment title="ME"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSegmentChange:" destination="7Ml-7K-7T4" eventType="valueChanged" id="TeZ-Tc-Xxo"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKi-v0-58e">
+                                <rect key="frame" x="284" y="483" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="dKi-v0-58e" secondAttribute="centerY" constant="-193.5" id="8hO-Gu-TTw"/>
+                            <constraint firstAttribute="centerX" secondItem="dKi-v0-58e" secondAttribute="centerX" constant="-5" id="b2q-R4-Uh3"/>
+                            <constraint firstAttribute="centerY" secondItem="4CH-jT-CiM" secondAttribute="centerY" constant="-124" id="pL9-eY-bf9"/>
+                            <constraint firstAttribute="centerX" secondItem="4CH-jT-CiM" secondAttribute="centerX" constant="-5.5" id="xft-oW-9mF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SegmentLabel" destination="dKi-v0-58e" id="iQU-PB-eT9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4x-XV-yFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011" y="1093"/>
+        </scene>
+        <!--Switch-->
+        <scene sceneID="4lz-on-ekm">
+            <objects>
+                <viewController title="Switch" id="zXB-u4-zT3" customClass="SwitchViewController" customModule="Homework4" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sKu-h1-FNK"/>
+                        <viewControllerLayoutGuide type="bottom" id="TZQ-dN-b9M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vsf-nN-2Bi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-hd-bDP">
+                                <rect key="frame" x="279" y="276" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2N-jc-s7s">
+                                <rect key="frame" x="276" y="396" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onSwitchChange:" destination="zXB-u4-zT3" eventType="valueChanged" id="we6-JB-fHp"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="ahF-hd-bDP" secondAttribute="centerY" constant="13.5" id="PDj-hX-t9P"/>
+                            <constraint firstAttribute="centerX" secondItem="ahF-hd-bDP" secondAttribute="centerX" id="T8g-eo-3U4"/>
+                            <constraint firstAttribute="centerX" secondItem="L2N-jc-s7s" secondAttribute="centerX" constant="-0.5" id="YAl-m8-CtS"/>
+                            <constraint firstAttribute="centerY" secondItem="L2N-jc-s7s" secondAttribute="centerY" constant="-111.5" id="fMf-ie-V2A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SwitchLabel" destination="ahF-hd-bDP" id="9eA-Pg-W22"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9aV-E8-cpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="1093"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SRW-Wo-TRT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pSk-TF-2Ci" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jmi-v3-LWs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="zlH-th-EdH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uPf-jk-71H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="363"/>
         </scene>
     </scenes>
 </document>
