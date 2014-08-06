@@ -40,7 +40,7 @@
                                     <segue destination="7Ml-7K-7T4" kind="show" id="7ZC-35-GSY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-Wl-x7S">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVM-Wl-x7S">
                                 <rect key="frame" x="261" y="134" width="78" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="iE8-hA-dym"/>
@@ -60,7 +60,6 @@
                             <constraint firstAttribute="centerX" secondItem="IyC-p3-rqs" secondAttribute="centerX" constant="-0.5" id="Pcz-Pl-Hmk"/>
                             <constraint firstAttribute="centerY" secondItem="IyC-p3-rqs" secondAttribute="centerY" constant="-168" id="acU-is-jos"/>
                             <constraint firstAttribute="centerX" secondItem="bVM-Wl-x7S" secondAttribute="centerX" constant="3.5" id="cUM-e9-ngC"/>
-                            <constraint firstItem="Wz5-px-zXb" firstAttribute="centerX" secondItem="bVM-Wl-x7S" secondAttribute="centerX" id="eaq-a2-zHI"/>
                             <constraint firstAttribute="centerY" secondItem="bVM-Wl-x7S" secondAttribute="centerY" constant="151" id="jBG-yq-TXu"/>
                             <constraint firstItem="Wz5-px-zXb" firstAttribute="leading" secondItem="IyC-p3-rqs" secondAttribute="leading" id="pCp-cV-2t6"/>
                             <constraint firstItem="Wz5-px-zXb" firstAttribute="leading" secondItem="bVM-Wl-x7S" secondAttribute="leading" id="pTA-AI-kCK"/>
@@ -104,7 +103,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-5o-HHY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hs-5o-HHY">
                                 <rect key="frame" x="279" y="263" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -150,7 +149,7 @@
                                     <action selector="onSegmentChange:" destination="7Ml-7K-7T4" eventType="valueChanged" id="TeZ-Tc-Xxo"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKi-v0-58e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Doh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKi-v0-58e">
                                 <rect key="frame" x="284" y="483" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -185,7 +184,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-hd-bDP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="On" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-hd-bDP">
                                 <rect key="frame" x="279" y="276" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
